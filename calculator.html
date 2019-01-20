@@ -1,0 +1,67 @@
+<html> 
+				<style>
+				
+				*{
+					margin:5;
+					padding:0;
+					background-color: green;
+				}
+				.button {
+					width:50;
+					height:50;
+					font-size= 25;
+					margin= 5;
+					cursor:pointer;
+					background-color: blue;
+				}
+				.space{
+					width:240;
+					margin:5;
+					font-size:25;
+					padding:0;
+					
+					}
+				.heading{
+					margin: 10;
+					font-size:30;
+					}
+					
+			</style>
+	<h2 class="heading">Simple Calculator</h2>
+	<body>
+		<div class="main">
+			<form name="form">
+				<input class="space" name="space">			
+			    <br>
+				<input class ="button" type="button" value="CLR" onclick="form.space.value=''">
+				<input class ="button" type="button" value ="/" onclick="form.space.value+='/'">
+				<input class ="button" type="button" value ="*" onclick="form.space.value+='*'">
+				<input class ="button" type="button" value ="=" onclick="form.space.value=eval(form.space.value)")>
+				</br>
+				
+				<br>
+				<input class ="button" type="button" value="1" onclick="form.space.value+='1'">
+				<input class ="button" type="button" value="2" onclick="form.space.value+='2'">
+				<input class ="button" type="button" value="3" onclick="form.space.value+='3'">
+				<input class ="button" type="button" value="4" onclick="form.space.value+='4'">
+				</br>
+				
+				<br>
+				<input class ="button" type="button" value="5" onclick="form.space.value+='5'">
+				<input class ="button" type="button" value="6" onclick="form.space.value+='6'">
+				<input class ="button" type="button" value="7" onclick="form.space.value+='7'">
+				<input class ="button" type="button" value="8" onclick="form.space.value+='8'">				
+				</br>
+				
+				<br>
+				<input class ="button" type="button" value="9" onclick="form.space.value+='9'">
+				<input class ="button" type="button" value="0" onclick="form.space.value+='0'">
+				<input class ="button" type="button" value="-" onclick="form.space.value+='-'">
+				<input class ="button" type="button" value="+" onclick="form.space.value+='+'">
+				</br>
+			</form>
+		</div>
+	</body>
+</html>
+	
+	
